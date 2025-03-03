@@ -1,0 +1,19 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    background-color: black; /* Nền đen */
+    color: white; /* Chữ trắng */
+    font-weight: bold; /* Chữ đậm */
+    font-size: 30px; /* Chữ lớn hơn */
+    padding: 15px; /* Tăng khoảng cách trên dưới */
+    text-align: center; /* Canh giữa chữ */
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+img{
+    display: block; margin: auto;" 
+}

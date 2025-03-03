@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+img {
+  width: 500px;
+  margin: auto;
+}
+h1 {
+  font-size: 40px;
+  color: aliceblue;
+}
+p {
+  text-decoration: underline dotted rgb(255, 16, 251);
+  font-size: 25px;
+  color: aqua;
+}
