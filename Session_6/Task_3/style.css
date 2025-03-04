@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+}
+/* Header */
+.header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin-left: 20px;
+}
+.nav {
+  margin-right: 20px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+/* Giới thiệu */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: #e9e9e9;
+  padding: 50px;
+  text-align: left;
+}
+.intro img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid black;
+}
+.intro h2 {
+  font-size: 22px;
+}
+/* Dự án */
+.projects {
+  padding: 40px;
+  text-align: center;
+}
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  background: #e9e9e9;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+}

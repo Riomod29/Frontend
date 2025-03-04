@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif; /* font chữ */
+  margin: 0; /* bỏ khoảng cách mặc định */
+}
+header {
+  background-color: #4caf50; /* màu nền */
+  color: white; /* màu chữ */
+  padding: 20px 0; /* khoảng cách bên trong */
+  text-align: center; /* căn giữa văn bản */
+}
+
+nav {
+  color: #3863df;
+  display: flex;
+  gap: 20px; /* Tạo khoảng cách đều giữa các mục */
+  justify-content: center; /* căn giữa */
+}
+
+.container {
+  display: flex; /* hiển thị dưới dạng flexbox */
+  max-width: 1000px; /* chiều rộng tối đa */
+  margin: 20px; /* khoảng cách */
+}
+
+.sidebar {
+  margin-top: 10px; /* khoảng cách trên */
+  text-align: left;
+  width: 35%; /* chiều rộng */
+  border-right: 2px solid #ccc; /* đường viền bên phải */
+  border-left: 2px solid #ccc; /* đường viền bên trái */
+  padding: 20px; /* khoảng cách bên trong */
+  padding-top: 10px;
+  border-bottom: 2px solid #ccc; /* đường viền bên dưới */
+  border-top: 2px solid #ccc; /* đường viền bên trên */
+}
+
+.sidebar ul li a {
+  /*chuyên mục*/
+  color: blue; /* màu chữ */
+}
+
+.content {
+  padding-left: 20px; /* khoảng cách bên trái */
+}
+
+.post img {
+  width: 210px; /* chiều rộng */
+}
+.footer {
+  background-color: #333; /* màu nền */
+  color: white; /* màu chữ */
+  text-align: center; /* căn giữa văn bản */
+  padding: 10px; /* khoảng cách bên trong */
+  margin-top: 20px; /* khoảng cách trên */
+}

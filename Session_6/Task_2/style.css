@@ -1,0 +1,61 @@
+body {
+  display: flex; /* hiển thị dưới dạng flexbox */
+  justify-content: center; /* căn giữa theo chiều ngang */
+  align-items: center; /* căn giữa theo chiều dọc */
+  height: 100vh; /* chiều cao 100% của viewport */
+  background-color: #dcdcdc; /* màu nền */
+  margin: 0; /* bỏ khoảng cách mặc định */
+  font-family: Arial, sans-serif; /* font chữ */
+}
+form {
+  background-color: rgb(255, 255, 255); /* nền trắng */
+  width: 300px; /* chiều rộng */
+  border-radius: 10px; /* bo tròn góc */
+}
+.container {
+  background: rgb(255, 255, 255); /* nền trắng */
+  padding: 20px; /* khoảng cách bên trong */
+  border-radius: 10px; /* bo tròn góc */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* đổ bóng */
+  width: 300px; /* chiều rộng */
+}
+h2 {
+  margin-bottom: 20px; /* khoảng cách dưới */
+  text-align: center; /* căn giữa văn bản */
+}
+label {
+  display: block; /* hiển thị dưới dạng block */
+  text-align: left; /* căn trái văn bản */
+  margin-top: 10px; /* khoảng cách trên */
+  font-weight: bold; /* chữ đậm */
+  margin-left: 20px; /* khoảng cách trái */
+}
+input {
+  width: 80%; /* mở rộng ngang */
+  padding: 8px; /* mở rộng hàng dọc */
+  margin-top: 5px; /* khoảng cách các đối tượng */
+  border: 1px solid #cccccc; /* chỉnh độ đậm đường viền */
+  border-radius: 5px; /* chỉnh kiểu bo bảng */
+  margin-left: 20px; /* khoảng cách trái */
+}
+.btn {
+  width: 85%; /* chiều rộng 100% */
+  padding: 10px; /* khoảng cách bên trong */
+  margin-top: 20px; /* khoảng cách trên */
+  margin-bottom: 20px; /* khoảng cách dưới */
+
+  display: block; /* hiển thị dưới dạng block */
+  margin-left: auto; /* căn giữa theo chiều ngang */
+  margin-right: auto; /* căn giữa theo chiều ngang */
+
+  background-color: #007bff; /* màu nền */
+  color: white; /* màu chữ */
+  border: none; /* không viền */
+
+  border-radius: 5px; /* bo tròn góc */
+  font-size: 16px; /* kích thước chữ */
+  cursor: pointer; /* con trỏ chuột */
+}
+.btn:hover {
+  background-color: #0056b3; /* màu nền khi hover */
+}

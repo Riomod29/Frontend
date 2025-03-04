@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif; /* font chữ */
+  margin: 0; /* bỏ khoảng cách mặc định */
+  padding: 0; /* bỏ khoảng cách bên trong */
+  height: 100vh; /* chiếm toàn bộ chiều cao màn hình */
+}
+nav a {
+  margin: 0 15px; /* tạo khoảng cách ngang giữa các mục */
+  text-decoration: none; /* bỏ gạch chân mặc định */
+  font-size: 18px; /* kích thước chữ */
+  color: #ffffff; /* màu chữ */
+}
+header {
+  background-color: #007bff; /* màu nền */
+  color: white; /* màu chữ */
+  padding: 20px 0; /* khoảng cách bên trong */
+  text-align: center; /* căn giữa văn bản */
+}
+.profile {
+  display: flex; /* hiển thị dưới dạng flexbox */
+  padding: 20px 20px; /* khoảng cách bên trong */
+  background-color: #f8f9fa; /* màu nền */
+  align-items: center; /* căn giữa theo chiều dọc */
+  justify-content: center; /* căn giữa theo chiều ngang */
+}
+.profile img {
+  display: flex; /* hiển thị dưới dạng flexbox */
+  width: 120px; /* chiều rộng */
+  height: 120px; /* chiều cao */
+  border-radius: 50%; /* bo tròn góc */
+  border: 3px solid #007bff; /* viền */
+}
+footer {
+  background-color: #e9ecef; /* màu nền */
+  padding: 5px; /* khoảng cách bên trong */
+  text-align: center; /* căn giữa văn bản */
+}
+section {
+  align-items: center; /* căn giữa theo chiều dọc */
+}
