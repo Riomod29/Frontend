@@ -1,0 +1,82 @@
+/* Container chứa hình ảnh */
+.overlay-container {
+  position: relative; /* Đặt vị trí tương đối để chứa các phần tử con tuyệt đối */
+  width: 590px; /* Chiều rộng của container */
+  height: 750px; /* Chiều cao của container */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://mtv.vn/uploads/2025/02/11/hn3.jpg"); /* Đặt nền màu và hình ảnh */
+  background-size: cover; /* Đặt kích thước hình ảnh nền bao phủ toàn bộ container */
+  display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+/* Overlay text */
+.overlay-text {
+  color: white; /* Đặt màu chữ là màu trắng */
+  padding: 20px; /* Đặt đệm cho phần tử */
+  text-align: left; /* Căn giữa văn bản */
+  position: absolute; /* Đặt vị trí tuyệt đối cho phần tử */
+  bottom: 20px; /* Đặt phần tử cách đáy 20px */
+  border-radius: 10px; /* Bo tròn các góc của phần tử */
+}
+
+.overlay-title {
+  font-size: 32px; /* Đặt kích thước font chữ cho tiêu đề */
+  font-weight: bold; /* Đặt font chữ đậm cho tiêu đề */
+}
+
+.overlay-content {
+  font-size: 16px; /* Đặt kích thước font chữ cho nội dung */
+  margin-top: 10px; /* Đặt khoảng cách trên cho nội dung */
+}
+
+/* Định dạng tổng thể cho trang */
+body {
+  font-family: Arial, sans-serif; /* Đặt font chữ mặc định cho body */
+  margin: 0; /* Đặt lề mặc định của body về 0 */
+  padding: 0; /* Đặt đệm mặc định của body về 0 */
+  background-color: #f5f5f5; /* Đặt màu nền cho body */
+}
+
+/* Khung chứa bài viết */
+.container {
+  width: 100%; /* Chiều rộng 100% */
+  max-width: 600px; /* Chiều rộng tối đa 600px */
+  background: white; /* Đặt nền màu trắng */
+  margin: 20px auto; /* Đặt lề trên và dưới 20px, căn giữa theo chiều ngang */
+  padding: 15px; /* Đặt đệm 15px */
+  border-radius: 8px; /* Bo tròn các góc 8px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đặt bóng đổ nhẹ */
+}
+
+/* Tiêu đề danh mục */
+.category {
+  font-size: 38px; /* Đặt kích thước font chữ 18px */
+  font-weight: bold; /* Đặt font chữ đậm */
+  display: flex; /* Sử dụng flexbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-bottom: 10px; /* Đặt khoảng cách dưới 10px */
+}
+
+.category-bar {
+  width: 7px; /* Chiều rộng 4px */
+  height: 35px; /* Chiều cao 18px */
+  background-color: rgb(255, 81, 0); /* Đặt màu nền cam */
+  margin-right: 8px; /* Đặt khoảng cách phải 8px */
+}
+
+/* Danh sách bài viết phụ */
+.sub-posts {
+  margin-top: 15px; /* Đặt khoảng cách trên 15px */
+}
+
+.sub-post {
+  font-size: 24px; /* Đặt kích thước font chữ 14px */
+  color: #333; /* Đặt màu chữ xám đậm */
+  padding: 10px 0; /* Đặt đệm trên và dưới 10px */
+}

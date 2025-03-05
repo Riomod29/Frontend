@@ -1,0 +1,56 @@
+<!--
+//   ####     ####    ##  ##    #####            ######   #####    ##  ##
+//  ##  ##   ##  ##   ### ##   ##                  ##     ##  ##   ##  ##
+//  ##       ##  ##   ######   ## ###              ##     #####    ##  ##
+//  ##  ##   ##  ##   ## ###   ##  ##              ##     ##  ##   ##  ##
+//   ####     ####    ##  ##    ####               ##     ##  ##    ###
+//
+ /\_/\       (\(\ 
+( o.o )     ( -.-)
+ > ^ <      o_(")(") 
+ o_(")(") 
+ 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riomod29</title>
+    <script
+      src="https://kit.fontawesome.com/7b988689d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button onclick="openModal()">Open Modal</button>
+
+    <div class="modal" id="modalBox">
+      <div class="modal-header">
+        New message to @mdo
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <label>Recipient:</label>
+        <input type="text" value="@mdo" readonly />
+        <label>Message:</label>
+        <textarea rows="4"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn close" onclick="closeModal()">Close</button>
+        <button class="btn send">Send message</button>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById("modalBox").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("modalBox").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

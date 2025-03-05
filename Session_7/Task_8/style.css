@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fb;
+}
+
+.card {
+  background: white;
+  width: 340px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaecef;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.badge {
+  display: inline-block;
+  background: #fce9d2;
+  color: #c97a20;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 12px;
+  color: #444;
+}
+
+.info i {
+  margin-right: 8px;
+  color: #6c6c6c;
+}
+
+.info b {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.info a {
+  color: #3270e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.progress-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6c6c6c;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #faf2e9;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  width: 76%;
+  background: #e78b3c;
+  border-radius: 5px;
+}
+
+.dates {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #444;
+}
+
+.dates span {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.avatars img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatars img:nth-child(2) {
+  margin-left: -10px;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c6c6c;
+}
+
+.tasks i {
+  margin-right: 13px;
+  color: #6c6c6c;
+}
+.tasks b {
+  margin-right: 13px;
+  color: #6c6c6c;
+}

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;  
+}
+.container {
+    max-width: 600px; /* Giới hạn chiều rộng của container */
+    margin: auto; /* Canh giữa container */
+    background: #EAEAEA; /* Màu nền */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    border-radius: 10px;  /* Bo tròn viền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Hiệu ứng bóng đổ */
+}
+h1 {
+    color: #15004e;
+}
+.benefits {
+    text-;
+    color: #231751;
+    text-align: left;
+    margin: 20px 0;
+}
+.benefits p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.benefits img {
+    width: 20px;
+    margin-right: 10px;
+}
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: #c0392b;
+    color: white;
+}
+.btn-secondary {
+    border: 2px solid #C1BCD1; /* Viền màu đậm hơn */
+    background-color: #EAEAEA`;
+    color: black;
+}
