@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #006aff, #ff15a5);
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: lightgray;
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
+}
+
+.form-row input {
+    flex: 1;
+}@All Tí nữa các bạn học xong ở lại để nhận thẻ sinh viên nhé

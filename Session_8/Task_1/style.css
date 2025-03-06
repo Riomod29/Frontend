@@ -1,0 +1,49 @@
+.body {
+    margin: 0; /*loại bỏ khoảng cách giữa các thẻ*/
+    font-family: Arial, sans-serif; /*kiểu chữ*/
+    border: none;
+    padding: 20px;
+    width: 100%;
+    
+    
+}
+.container {
+    display: flex; /*chuyển thành kiểu flexbox*/
+    flex-direction: column; /*chữ xuống dưới*/
+    height: 100vh; /*chiều cao 100%*/
+}
+.car {
+    display: flex; /*chuyển thành kiểu flexbox*/
+    width: 50%; /*chiều rộng 50%*/
+    padding: 20px; /*khoảng cách giữa viền và chữ*/
+    text-align: center; /*chữ ở giữa*/
+    border-right: 1px solid #000; /*viền đen*/
+    margin: 0 auto; /*chữ ở giữa*/
+}
+.date {
+    font-size: 12px; /*cỡ chữ 12px*/
+    color: #999; /*màu chữ xám*/
+}
+.btn {
+    background-color: #ffffff; /*màu nền đen*/
+    color: #000000; /*màu chữ trắng*/
+    padding: 10px 20px; /*khoảng cách giữa chữ và viền*/
+    border: 1px solid #000; /*viền đen*/
+    cursor: pointer; /*biến thành hình bàn tay khi rê chuột vào*/
+}
+.btn:hover {
+    background-color: #000000; /*màu nền trắng*/
+    color: #ffffff; /*màu chữ đen*/
+}
+hr{
+    margin: 70px; /*khoảng cách giữa các thẻ*/
+}
+.picture {
+    display: flex; /*chuyển thành kiểu flexbox*/
+    justify-content: center; /*chữ ở giữa*/
+}
+img {
+    width: 250px; /*chiều rộng 150px*/
+    height: 150px; /*chiều cao 150px*/
+    
+}
