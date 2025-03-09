@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 100px;
+        }
+        .header .child{
+            margin: 10px;
+        }
+
+        .welcome {
+            text-align: center;
+        }
+        .welcome .button {
+            color: white;
+            background-color: black;
+            border-radius: 6%;
+            width: 120px;
+            height: 40px;
+        }
+
+        .featured{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+            gap: 20px; /* Tạo khoảng cách giữa các ô */
+        }
+        .project{
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+        .featured .project .stak{
+            background-color: #CCCCCC;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            border-radius: 10%;
+        }
+        
+        .about{
+            text-align: center;
+            width: auto;
+            height: 150px;
+            background-color: slategrey;
+        }
+        .footer {
+            width: auto;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Portfolio Website</h1>
+        <a class="child">Home</a>
+        <a class="child">About</a>
+        <a class="child">Portfolio</a>
+        <a class="child">Contact</a>
+    </div>
+
+    <div class="welcome">
+        <h2>Welcome to my portfolio website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id
+        ultrices tellus. Duis tristique nulla ex, nec lobortis risus maximus a.
+        </p>
+        <button class="button">Featured Work</button>
+    </div>
+
+    <div class="featured">
+        <h2>Featured Work</h2>
+        <div class="project">
+            <div class="stak">Project 1</div>
+            <div class="stak">Project 2</div>
+            <div class="stak">Project 3</div>
+            <div class="stak">Project 4</div>
+        </div>
+    </div>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id
+        ultrices tellus. Duis tristique nulla ex, nec lobortis risus maximus a.
+        Integer vel arcu euismod, tincidunt felis at, ultricies felis. Ut
+        imperdiet, elit vel venenatis vulputate, tellus nisi tincidunt purus, a
+        tristique velit lacus eget purus.
+        </p>
+    </div>
+    <div class="footer">
+        <p>© 2023 Portfolio Website</p>
+    </div>
+</body>
+</html>

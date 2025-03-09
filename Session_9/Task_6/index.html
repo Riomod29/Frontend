@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Flexbox</title>
+    <style>
+        /* Reset CSS: bỏ margin và padding mặc định của trình duyệt */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Căn giữa nội dung trên màn hình */
+        body {
+            display: flex;
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            min-height: 100vh; /* Chiều cao tối thiểu = 100% màn hình */
+            background-color: #f5f5f5; /* Màu nền xám nhạt */
+        }
+
+        /* Phần chứa toàn bộ bố cục */
+        .container {
+            display: flex;
+            flex-direction: column; /* Sắp xếp các dòng theo chiều dọc */
+            width: 80%; /* Chiều rộng tổng thể */
+            gap: 10px; /* Khoảng cách giữa các hàng */
+        }
+
+        /* Dòng chứa 1 ô lớn + 4 ô nhỏ */
+        .row {
+            display: flex; /* Dùng Flexbox để sắp xếp ngang */
+            gap: 10px; /* Khoảng cách giữa các cột */
+        }
+
+        /* Ô lớn (Big) chiếm 2 phần */
+        .big {
+            flex: 2; /* Ô này chiếm gấp đôi ô bên cạnh */
+            background-color: #2c3e50; /* Màu nền xanh đậm */
+            color: white; /* Chữ màu trắng */
+            display: flex;
+            justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+            align-items: center; /* Căn giữa nội dung theo chiều dọc */
+            padding: 40px; /* Thêm khoảng cách bên trong */
+            font-size: 24px; /* Cỡ chữ lớn */
+        }
+
+        /* Phần chứa các ô nhỏ */
+        .small-container {
+            flex: 1; /* Chiếm 1 phần so với ô Big */
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các ô nhỏ xuống dòng khi hết chỗ */
+            gap: 10px; /* Khoảng cách giữa các ô nhỏ */
+        }
+
+        /* Ô nhỏ (Small) chia đều thành 2 cột */
+        .small {
+            flex: 1 1 calc(50% - 10px); /* Mỗi ô nhỏ chiếm 50% chiều rộng, trừ đi khoảng cách */
+            background-color: #2c3e50; /* Màu nền xanh đậm */
+            color: white; /* Chữ màu trắng */
+            display: flex;
+            justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+            align-items: center; /* Căn giữa nội dung theo chiều dọc */
+            padding: 20px; /* Khoảng cách bên trong ô */
+            font-size: 18px; /* Cỡ chữ nhỏ hơn */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Dòng 1 -->
+        <div class="row">
+            <div class="big">Big</div>
+            <div class="small-container">
+                <div class="small">Small 1</div>
+                <div class="small">Small 2</div>
+                <div class="small">Small 3</div>
+                <div class="small">Small 4</div>
+            </div>
+        </div>
+
+        <!-- Dòng 2 -->
+        <div class="row">
+            <div class="big">Big</div>
+            <div class="small-container">
+                <div class="small">Small 5</div>
+                <div class="small">Small 6</div>
+                <div class="small">Small 7</div>
+                <div class="small">Small 8</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

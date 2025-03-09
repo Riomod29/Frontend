@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+        <style>
+            body {
+            background-color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 15px;
+            color: white;
+        }
+        .all {
+            height: 50vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: 7px;
+        }
+        .all1 {
+            display: flex   ;
+        }
+        .header {
+            width: 710px;
+            background-color: #3498DB;
+            align-items: center;
+            padding: 10px;
+        }
+        .sidebar1 {
+            background-color: #2ecc71;
+            margin-right: 8px; /* Tạo khoảng cách với Content */
+            padding: 10px;
+            width: 180px;
+            background-color: #2ecc71;
+        }
+        .sidebar2 {
+            padding: 10px;
+            width: 502px;
+            background-color: #e74c3c;
+        }
+        .footer {
+            padding: 10px;
+            width: 710px;
+            background-color: #9b59b6;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="all">
+        <div class="header">Header</div>
+        <div class="all1">
+            <div class="sidebar1">Sidebar</div>
+            <div class="sidebar2">Content</div>
+        </div>
+        <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
