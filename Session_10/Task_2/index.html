@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riomod29</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            width: auto;
+            display: flex;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .all {
+            width: none;
+            display: flex;
+            gap: 0.1px;
+            width: 900px;
+            background-color: #F9FAFC;
+        }
+        .child {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: none;
+            }
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #47494C;
+            width: 200px;
+            height: 110px;
+            background-color: #EBEEF3;
+            border: 10px solid white;
+            font-size: 25px;
+        }
+        .picture{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 10px solid white;
+            border-radius: 10px;
+        }
+        .child:nth-last-of-type(1){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .child:nth-last-of-type(3){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <p>Category</p>
+    <div class="all">
+        <div class="child">
+            <div>
+            <h1 class="text">FOOTBALL</h1>
+            </div>
+            <img class="picture" src="./football.jpg">
+        </div>
+        <div class="child">
+            <div>
+            <h1 class="text">BASCKETBALL</h1>
+            </div>
+            <img class="picture" src="./backetball.webp">
+        </div>
+        <div class="child">
+            <div>
+            <h1 class="text">CARSPORT</h1>
+            </div>
+            <img class="picture" src="./cardrift.jpg">
+        </div>
+        <div class="child">
+            <div>
+            <h1 class="text">TABLETENNIS</h1>
+            </div>
+            <img class="picture" src="./tabletennis.jpg">
+        </div>
+    </div>
+</body>
+</html>
