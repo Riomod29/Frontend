@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .all {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+            /* flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; */
+        }
+        .child {
+            display: flex;
+            background-color: red;
+            margin: 10px;
+            border: 1px solid black;
+            text-align: center;
+            align-content: center;
+            width: 486px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .child1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            width: 1500px;
+            height: 500px;
+            object-fit: cover;
+        }
+        .contend1 {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+        }
+            .text1 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 60%;
+                left: 17%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: white;
+            }
+            .contend2 {
+            position: absolute;
+            top: 82%;
+            left: 13%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+        }
+            .text2 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 92%;
+                left: 14%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: white;
+            }
+
+            .contend3 {
+            position: absolute;
+            top: 82%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+        }
+            .text3 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 92%;
+                left: 42%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: white;
+            }
+
+            .contend4 {
+            position: absolute;
+            top: 82%;
+            left: 76%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+        }
+            .text4 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 92%;
+                left: 80%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: white;
+            }
+
+            .contend5 {
+            position: absolute;
+            top: 120%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+        }
+            .text5 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 130%;
+                left: 11%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: white;
+            }
+
+            .contend6 {
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: white;
+            font-weight: 200;
+        }
+            .text6 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 125%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: rgb(255, 0, 0);
+                background-color: white;
+                width: 450px;
+                height: 40px;
+                border-radius: 5px;
+            }
+
+            .contend7 {
+            position: absolute; /*chữ trên ảnh*/
+            top: 120%;
+            left: 78%;
+            transform: translate(-50%, -50%); /*chữ trên ảnh*/
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+            .text7 {
+                position: absolute; /*chữ trên ảnh*/
+                top: 130%;
+                left: 78%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+            }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <img src="https://free-3dtextureshd.com/wp-content/uploads/2024/12/313-4.jpg.webp" class="child child1"></img>
+        <h1 class="contend1">We line balloons</h1>
+        <p class="text1">You can find all kinds of balloon related things here.</p>
+
+        <img src="https://www.looper.com/img/gallery/how-many-times-the-deadpool-3-trailer-drops-an-f-bomb-is-fing-bonkers/intro-1713809619.webp" class="child child2"></img>
+        <h1 class="contend2">Angry people at balloon <br>fiestas</h1>
+        <p class="text2">Hot air balloons. A bit weather sensitive.</p>
+        
+        
+        <img src="https://www.looper.com/img/gallery/how-many-times-the-deadpool-3-trailer-drops-an-f-bomb-is-fing-bonkers/why-deadpool-3s-lack-of-censorship-is-so-important-for-the-mcu-1713809619.webp" class="child child3"></img>
+        <h1 class="contend3">Balloon photos</h1>
+        <p class="text3">I have quite a few.</p>
+        
+        
+        <img src="https://cdn-dkepej.nitrocdn.com/xHPizjaXJNONuYnLnfsGSUCsMnIlzOEq/assets/images/optimized/rev-ef469ea/blog.frame.io/wp-content/uploads/2024/08/B0861-featured-image-2048x1152.jpg" class="child child4"></img>
+        <h1 class="contend4">Special Shapes</h1>
+        <p class="text4">Why are some of them so scary-looking?</p>
+        
+        
+        <img src="https://cdn-dkepej.nitrocdn.com/xHPizjaXJNONuYnLnfsGSUCsMnIlzOEq/assets/images/optimized/rev-ef469ea/blog.frame.io/wp-content/uploads/2024/08/deadpool-wolverine-quarry-2.jpg" class="child child5"></img>
+        <h1 class="contend5">10 things you discover when <br> taking a balloon ride.</h1>
+        <p class="text5">Number 8 will AMAZE you.</p>
+        
+        
+        <img src="https://erinhtvfilm.weebly.com/uploads/6/0/2/2/60222329/3935528_orig.png" class="child child6"></img>
+        <h1 class="contend6">Sign up for more information about balloons.</h1>
+        <button class="text6">Sign me up!</button>
+        
+        
+        <img src="https://erinhtvfilm.weebly.com/uploads/6/0/2/2/60222329/7902745_orig.png" class="child child7"></img>
+        <h1 class="contend7">10 things you discover when <br>taking a balloon ride.</h1>
+        <p class="text7">Number 8 will AMAZE you.</p>
+
+
+    </div>
+</body>
+</html>
