@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #BABABA;
+            padding: 20px;
+            width: 800px;
+            height: 700px;
+        }
+        .header {
+            font-weight: bold;
+            margin-left: 70px;
+        }
+        .all {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            background-color: #BABABA;
+            gap: 5px;
+            border-bottom: 2px solid white;
+            margin: 20px auto;
+        }
+        .box1 {
+            width: 220px;
+            height: 170px;
+            background-color: #BABABA;
+            border-radius: 10px;
+        }
+        .picture {
+            width: 90%;
+            height: 90%;
+            overflow:hidden;
+            border-radius: 5%;
+            object-fit: contain; /* Giữ nguyên tỷ lệ, nằm giữa khung */
+        }
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            flex-direction: space-evenly;
+            width: 600px;
+            height: 150px;
+            background-color: #BABABA;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        .title {
+            display: flex;
+            font-size: 22px;
+            font-weight: bold;
+            margin: -5px 0;
+        }
+        .date {
+            display: flex;
+            justify-content: start; 
+            gap: 30px;
+            margin: 30px 0;
+            align-items: center;
+
+        }
+        span{
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: #142850;
+            width: 50px;
+            height: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #9DC5D2;
+
+            }
+        .contend {
+            margin-left:  0;
+            font-size: 11px;
+            line-height: 1.5; /*cách dòng*/
+        }
+        
+        .end{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 60px;
+        }
+        .end1{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .png {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="header">Featured works</p>
+        <div class="all">
+            <div class="box1">
+            <div class="picture">
+                <img src="https://aleks-tl.github.io/john/img/featured_1.webp" alt="">
+            </div>
+        </div>
+                <div class="box2">
+                    <h1 class="title">Designing Dashboards</h1>
+                        <div class="date">
+                            <span>2020</span>
+                            <p>Dashboard</p>
+                        </div>
+                    <p class="contend">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                        Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+        </div>
+        <div class="all">
+            <div class="box1">
+            <div class="picture">
+                <img src="https://aleks-tl.github.io/john/img/featured_2.webp" alt="">
+            </div>
+        </div>
+                <div class="box2">
+                    <h1 class="title">Vibrant Portraits of 2020</h1>
+                        <div class="date">
+                            <span>2018</span>
+                            <p>Illustration</p>
+                        </div>
+                    <p class="contend">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+        </div>
+        <div class="all">
+            <div class="box1">
+            <div class="picture">
+                <img src="https://aleks-tl.github.io/john/img/featured_3.webp" alt="">
+            </div>
+        </div>
+                <div class="box2">
+                    <h1 class="title">36 Days of Malayalam type</h1>
+                        <div class="date">
+                            <span>2018</span>
+                            <p>Typography</p>
+                        </div>
+                    <p class="contend">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+        </div>
+        <div class="end">
+            <img class="png" src="https://aleks-tl.github.io/john/img/icons/fb.svg" alt="">
+            <img class="png" src="https://aleks-tl.github.io/john/img/icons/insta.svg" alt="">
+            <img class="png" src="https://aleks-tl.github.io/john/img/icons/twitter.svg" alt="">
+            <img class="png" src="https://aleks-tl.github.io/john/img/icons/Linkedin.svg" alt="">
+        </div>
+        <p class="end1">Copyright ©2020 All rights reserved</p>
+</body>
+</html>
