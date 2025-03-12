@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riomod29</title>
+    <style>
+        body
+        {
+            background-color: lightgray;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            width: 150vh;
+            margin: 0 auto;
+        }
+        .hr
+        {
+            width: 100%;
+            height: 10vh;
+            background-color: #78BCBE;
+        }
+        .flexbox1,
+        .flexbox2
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flexbox1 .item1
+        {
+            background-color: #EB5C48;
+            height: 20vh;
+            width: 49%;
+        }
+        .flexbox1 .item2
+        {
+            background-color: #F1A110;
+            height: 20vh;
+            width: 49%;
+        }
+        .flexbox2 .item1
+        {
+            background-color: #103959;
+            height: 20vh;
+            width: 32.3%;
+        }
+        .flexbox2 .item2
+        {
+            background-color: #EB5C48;
+            height: 20vh;
+            width: 32.3%;
+        }.flexbox2 .item3
+        {
+            background-color: #F1A110;
+            height: 20vh;
+            width: 32.3%;
+        }
+        @media (max-width: 768px)
+        {
+            .container
+            {
+                width: 70vw;
+            }
+            .flexbox1, .flexbox2
+            {
+                flex-direction: column;
+                gap: 2vh;
+            }
+            .flexbox1 .item1,
+            .flexbox1 .item2
+            {
+                width: auto;
+            }
+            .flexbox2 .item1,
+            .flexbox2 .item2,
+            .flexbox2 .item3
+            {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hr"></div>
+    <div class="flexbox1">
+        <div class="item1"></div>
+        <div class="item2"></div>
+    </div>
+    <div class="hr"></div>
+    <div class="flexbox2">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+</div>
+</body>
+</html>

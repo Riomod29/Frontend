@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .product{
+            width: 200px;
+            height: 350px;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+            background-color: skyblue;
+            position: relative;
+        }
+        img{
+            width: 150px;
+            height: 200px;
+        }
+        .hide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 350px;
+            border: 1px solid #000;
+            text-align: center;
+            background-color: skyblue;
+            position: absolute; 
+            opacity: 0;
+            top: 0px;
+            left: 0px;
+    }   
+    button {
+        width: 50px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+    .hide:hover {
+        opacity: 0.5;
+    }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://product.hstatic.net/200000065946/product/pro_mau_nau_noi_that_moho_ban___2__2bd959b0b66147fb93419023ac9017ed_large.jpg" alt="">
+        <h3>Product Name</h3>
+        <p>Bàn Ăn Scania (Mặt Vân Đá, 140)</p>
+        <button>-21%</button>
+        <div class="hide">
+            <button class="nut">GET</button>
+        </div>
+    </div>
+</body>
+</html>
