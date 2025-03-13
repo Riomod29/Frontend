@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Form Interface</title>
+    <style>
+        body {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+        }
+        .all {
+         width: 30%;
+         height: 50%;   
+         justify-content: center;
+         align-items: center;
+         border: 1px solid black;
+         border-radius: 5px;
+         background-color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-left: -10px;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            margin-top: -40px;
+        }
+        form {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">  
+    <div class="container mt-5">
+        <form>
+                <div class="header">
+                    <h4>Đăng ký thành viên</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            <div class="form-group">
+                <label for="email">Họ và tên</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="email">Mật khẩu</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <button type="submit" class="btn btn-success">Đăng ký</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

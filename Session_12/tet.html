@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giao diện có thanh cuộn ngang</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: purple; /* Màu viền ngoài */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .wrapper {
+        width: 90%;
+        max-width: 1200px;
+        background: white;
+        padding: 20px;
+        overflow-x: auto; /* Tạo thanh cuộn ngang */
+        border-radius: 10px;
+      }
+
+      .content {
+        width: 150%; /* Lớn hơn màn hình để có thể cuộn ngang */
+        background: lightgray;
+        padding: 20px;
+        white-space: nowrap;
+      }
+
+      /* Tùy chỉnh thanh cuộn cho Chrome */
+      .wrapper::-webkit-scrollbar {
+        height: 10px; /* Chiều cao thanh cuộn ngang */
+      }
+
+      .wrapper::-webkit-scrollbar-thumb {
+        background: gray; /* Màu thanh cuộn */
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h2>Thanh cuộn ngang xuất hiện tại đây</h2>
+        <p>Đây là nội dung dài để tạo thanh cuộn ngang...</p>
+      </div>
+    </div>
+  </body>
+</html>

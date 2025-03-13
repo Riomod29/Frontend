@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{   
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h4{
+            margin-left: 20px;
+        }
+        .col-sm-10{
+            margin-left: 20px;
+        }
+        p{
+            margin-left: 20px;
+            font-size: 13px;
+        }
+        #button{
+            width: 30%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <H4>Payment</H4>
+        <fieldset class="row mb-3">
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                    Credit card
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                    Debit card
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option3">
+                    <label class="form-check-label" for="gridRadios2">
+                    Paypal
+                    </label>
+                </div>
+            </div>
+    </div>
+            <div style="display: flex;">
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Name on card</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Credit card number</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+<p>Full name as displayed on card</p>
+
+    <div style="width: 70%;">
+        <div style="display: flex;">
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 35%;"><hr></div>
+        <div>
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary" id="button">Continue to checkout</button>
+            </div>
+        </div>
+</body>
+</html>
