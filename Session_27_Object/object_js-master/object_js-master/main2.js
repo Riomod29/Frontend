@@ -1,36 +1,36 @@
-
 /*
- - Làm 1 ứng dụng đơn giản về quản sinh viên của 1 lớp
+ - Làm 1 ứng dụng đơn giản về quản lý sinh viên của 1 lớp
  - Biết sinh viên gồm có các thông tin sau:
  + Họ và tên,
  + Tuổi,
  + Mã sinh viên,
- + Giới tính,.,
- + Sinh Nhật,
+ + Giới tính,
+ + Sinh nhật,
  + Địa chỉ,
- + Phone number 
- - Hiển thị, thêm, xoá, sửa
- - Tìm kiếm, phân trang
+ + Số điện thoại
+ - Các chức năng: Hiển thị, thêm, xóa, sửa, tìm kiếm, phân trang
 */
 
+// Đối tượng mẫu đại diện cho một sinh viên
 let student = {
-    id: 1,
-    name: "Nguyen Van A",
-    age: 20,
-    gender: "Male", // "MALE -> Nam", "FEMALE -> Nu", "OTHER -> Khac"
-    birthday: "1999-01-01",
-    address: "97 Man Thiện, Q9, HCM",
-    phone: "0123456789",
-    status: true, // " true ACTIVE -> Hoat dong", " false INACTIVE -> Khong hoat dong"
+    id: 1, // Mã sinh viên
+    name: "Nguyen Van A", // Họ và tên
+    age: 20, // Tuổi
+    gender: "Male", // Giới tính ("Male -> Nam", "Female -> Nữ", "Other -> Khác")
+    birthday: "1999-01-01", // Ngày sinh
+    address: "97 Man Thiện, Q9, HCM", // Địa chỉ
+    phone: "0123456789", // Số điện thoại
+    status: true, // Trạng thái ("true -> Hoạt động", "false -> Không hoạt động")
 }
 
+// Danh sách sinh viên mẫu
 let studentList = [
     student,
     {
         id: 2,
         name: "Nguyen Van B",
         age: 20,
-        gender: "Male", // "MALE -> Nam", "FEMALE -> Nu", "OTHER -> Khac"
+        gender: "Male",
         birthday: "1999-01-01",
         address: "97 Man Thiện, Q9, HCM",
         phone: "0123456789",
@@ -40,7 +40,7 @@ let studentList = [
         id: 3,
         name: "Nguyen Van C",
         age: 20,
-        gender: "Male", // "MALE -> Nam", "FEMALE -> Nu", "OTHER -> Khac"
+        gender: "Male",
         birthday: "1999-01-01",
         address: "97 Man Thiện, Q9, HCM",
         phone: "0123456789",
@@ -48,8 +48,10 @@ let studentList = [
     }
 ]
 
+// Lấy phần tử HTML để hiển thị danh sách sinh viên
 let tableDataEl = document.getElementById("table_data");
 
+// Hàm hiển thị danh sách sinh viên lên giao diện
 function renderDataToView() {
     let templateHtml = ``;
     for (let i = 0; i < studentList.length; i++) {
@@ -75,66 +77,62 @@ function renderDataToView() {
     tableDataEl.innerHTML = templateHtml;
 }
 
-
-
-
+// Hàm thêm sinh viên mới vào danh sách
 function addStudent() {
     let newStudent = {
-        id: Date.now(),
-        name: prompt("Nhap ten sinh vien"),
-        age: +prompt("Nhap tuoi sinh vien"),
-        gender: prompt("Nhap gioi tinh sinh vien", "OTHER"),
-        birthday: prompt("Nhap ngay sinh sinh vien"),
-        address: prompt("Nhap dia chi sinh vien"),
-        phone: prompt("Nhap so dien thoai sinh vien"),
-        status: prompt("Nhap trang thai sinh vien", "true") == "true" ? true : false,
+        id: Date.now(), // Tạo mã sinh viên tự động dựa trên thời gian hiện tại
+        name: prompt("Nhập tên sinh viên"),
+        age: +prompt("Nhập tuổi sinh viên"),
+        gender: prompt("Nhập giới tính sinh viên", "OTHER"),
+        birthday: prompt("Nhập ngày sinh sinh viên"),
+        address: prompt("Nhập địa chỉ sinh viên"),
+        phone: prompt("Nhập số điện thoại sinh viên"),
+        status: prompt("Nhập trạng thái sinh viên", "true") == "true" ? true : false,
     }
 
-    studentList.push(newStudent);
-    renderDataToView()
+    studentList.push(newStudent); // Thêm sinh viên mới vào danh sách
+    renderDataToView(); // Cập nhật giao diện
 }
 
-
+// Hàm xóa sinh viên khỏi danh sách
 function deleteStudent(studentId) {
-    // studentList = studentList.filter((student) => {
-    //     return student.id != studentId;
-    // })
-    for(let i = 0; i < studentList.length; i++) {
-        if(studentList[i].id == studentId) {
-            studentList.splice(i, 1);
+    for (let i = 0; i < studentList.length; i++) {
+        if (studentList[i].id == studentId) {
+            studentList.splice(i, 1); // Xóa sinh viên tại vị trí tìm thấy
             break;
         }
     }
-    renderDataToView()
+    renderDataToView(); // Cập nhật giao diện
 }
 
-
+// Hàm chỉnh sửa thông tin sinh viên
 function editStudent(index) {
-    let student = studentList[index]
+    let student = studentList[index];
     let studentUpdate = {
-        id: student.id,
-        name: prompt("Nhap ten sinh vien", student.name),
-        age: +prompt("Nhap tuoi sinh vien", student.age),
-        gender: prompt("Nhap gioi tinh sinh vien", student.gender),
-        birthday: prompt("Nhap ngay sinh sinh vien", student.birthday),
-        address: prompt("Nhap dia chi sinh vien", student.address),
-        phone: prompt("Nhap so dien thoai sinh vien", student.phone),
-        status: prompt("Nhap trang thai sinh vien", student.status) == "true"? true : false,
+        id: student.id, // Giữ nguyên mã sinh viên
+        name: prompt("Nhập tên sinh viên", student.name),
+        age: +prompt("Nhập tuổi sinh viên", student.age),
+        gender: prompt("Nhập giới tính sinh viên", student.gender),
+        birthday: prompt("Nhập ngày sinh sinh viên", student.birthday),
+        address: prompt("Nhập địa chỉ sinh viên", student.address),
+        phone: prompt("Nhập số điện thoại sinh viên", student.phone),
+        status: prompt("Nhập trạng thái sinh viên", student.status) == "true" ? true : false,
     }
-    studentList[index] = studentUpdate;
-    renderDataToView()
+    studentList[index] = studentUpdate; // Cập nhật thông tin sinh viên
+    renderDataToView(); // Cập nhật giao diện
 }
 
+// Hàm thay đổi trạng thái hoạt động của sinh viên
 function editStatus(index) {
-    let student = studentList[index]
+    let student = studentList[index];
     let studentUpdate = {
-        ...student,
-        status: !student.status
+        ...student, // Sao chép toàn bộ thông tin sinh viên
+        status: !student.status // Đảo ngược trạng thái hiện tại
     }
 
-    studentList[index] = studentUpdate;
-    renderDataToView()
+    studentList[index] = studentUpdate; // Cập nhật trạng thái sinh viên
+    renderDataToView(); // Cập nhật giao diện
 }
 
-
-renderDataToView()
+// Hiển thị danh sách sinh viên khi tải trang
+renderDataToView();
