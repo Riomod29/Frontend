@@ -60,7 +60,7 @@ function choiceSp(){
         }
     } else {
         alert("Sản phẩm không có trong cửa hàng");
-    }   
+    }
 }
 function sortPrice() {
     let choice;
@@ -98,9 +98,9 @@ function sortPrice() {
     } while (choice != 3);
 }
 // Tính số tiền thanh toán trong giỏ hàng
-function totalPrice() { 
+function totalPrice() {
     let total = 0; // Khai báo biến total để tính tổng tiền
-    // và tính tổng tiền bằng cách nhân giá sản phẩm với số lượng 
+    // và tính tổng tiền bằng cách nhân giá sản phẩm với số lượng
     cart.forEach((item) => { // Duyệt qua từng sản phẩm trong giỏ hàng
         // Tính tổng tiền bằng cách nhân giá sản phẩm với số lượng
         total += item.price * item.quantity; // Cộng dồn vào biến total
@@ -111,7 +111,7 @@ function totalPrice() {
     alert(`Tổng tiền thanh toán là: ${total}`);
 }
 
- 
+
 function menu(){
     let choice;
     do {
@@ -130,7 +130,7 @@ function menu(){
             +"4. Tính số tiền thanh toán trong giỏ hàng.\n"
             +"5. Thoát.\n"
             +"-----------------------------------------------------"
-        )    
+        )
     choice = +prompt("Nhập vào lựa chọn của bạn");
     switch (choice) {
         case 1:
