@@ -1,13 +1,23 @@
-// ấn buton Hide text thì ẩn text h1
-// ấn buton Show text thì hiện text h1
-const hideButton = document.getElementById('hideButton');
-const showButton = document.getElementById('showButton');
-const textElement = document.querySelector('h1');
+// Lấy các phần tử cần thiết
+const openModalButton = document.getElementById('openModal');
+const closeModalButton = document.getElementById('closeModal');
+const modal = document.getElementById('modal');
+const modalOverlay = document.getElementById('modalOverlay');
 
-hideButton.addEventListener('click', () => {
-    textElement.style.display = 'none';
+// Hiển thị Modal
+openModalButton.addEventListener('click', () => {
+    modal.style.display = 'block'; // Hiển thị modal
+    modalOverlay.style.display = 'block'; // Hiển thị overlay
 });
 
-showButton.addEventListener('click', () => {
-    textElement.style.display = 'block';
+// Ẩn Modal
+closeModalButton.addEventListener('click', () => {
+    modal.style.display = 'none'; // Ẩn modal
+    modalOverlay.style.display = 'none'; // Ẩn overlay
+});
+
+// Ẩn Modal khi click vào overlay
+modalOverlay.addEventListener('click', () => {
+    modal.style.display = 'none'; // Ẩn modal
+    modalOverlay.style.display = 'none'; // Ẩn overlay
 });

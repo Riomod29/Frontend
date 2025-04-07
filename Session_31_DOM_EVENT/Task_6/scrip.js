@@ -1,13 +1,20 @@
-// ấn buton Hide text thì ẩn text h1
-// ấn buton Show text thì hiện text h1
-const hideButton = document.getElementById('hideButton');
-const showButton = document.getElementById('showButton');
-const textElement = document.querySelector('h1');
+// Tài khoản cố định
+const validUsername = "huanrose@gmail.com";
+const validPassword = "123456";
 
-hideButton.addEventListener('click', () => {
-    textElement.style.display = 'none';
-});
+// Lấy các phần tử từ DOM
+const loginButton = document.getElementById("loginButton");
+const usernameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
 
-showButton.addEventListener('click', () => {
-    textElement.style.display = 'block';
+// Xử lý sự kiện khi nhấn nút "login"
+loginButton.addEventListener("click", () => {
+    const enteredUsername = usernameInput.value;
+    const enteredPassword = passwordInput.value;
+
+    if (enteredUsername === validUsername && enteredPassword === validPassword) {
+        console.log("Đăng nhập thành công!");
+    } else {
+        console.log("Đăng nhập thất bại!");
+    }
 });

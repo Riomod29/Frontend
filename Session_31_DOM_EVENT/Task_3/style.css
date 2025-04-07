@@ -1,16 +1,23 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 50px;
-    transition: all 0.3s ease;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+.color-box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#purple {
+  background-color: violet;
+}

@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            width: auto;
+        }
+    </style>
 </head>
 <body>
+    <form id="loginForm">
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="button" id="loginButton">login</button>
+    </form>
     <script src="./scrip.js"></script>
 </body>
 </html>
