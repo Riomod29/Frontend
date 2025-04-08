@@ -3,7 +3,7 @@ const validUsername = "huanrose@gmail.com";
 const validPassword = "123456";
 
 // Lấy các phần tử từ DOM
-const loginButton = document.getElementById("loginButton");
+const loginButton = document.getElementById("loginButton"); //loginButton đang lưu gì: document.getElementById("loginButton")
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 

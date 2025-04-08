@@ -1,0 +1,64 @@
+/* Căn giữa nội dung trang theo chiều dọc và ngang */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Khung chứa toàn bộ ứng dụng todo list */
+.task_box {
+    border: 1px solid black;
+    width: 700px;
+    height: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Căn giữa tiêu đề */
+.task_box>h2 {
+    text-align: center;
+}
+
+/* Khung chứa input và nút thêm công việc */
+.task_box>.input_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Thiết lập độ rộng cho ô input */
+.task_box>.input_box>input {
+    width: 85%;
+}
+
+/* Thiết lập độ rộng cho nút thêm */
+.task_box>.input_box>button {
+    flex: 1;
+}
+
+/* Khung chứa danh sách công việc với thanh cuộn */
+.task_box>.data_box {
+    display: flex;
+    flex-direction: column;
+    height: calc(350px - 130px);
+    overflow-y: auto;
+}
+
+/* Định dạng cho từng item công việc */
+.task_box>.data_box>.data_item {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+/* Màu đỏ cho icon thùng rác */
+.fa-trash {
+    color: red;
+}
+
+/* Căn giữa text hiển thị kết quả */
+.result-text {
+    text-align: center;
+}
