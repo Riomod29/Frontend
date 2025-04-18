@@ -1,0 +1,92 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Căn chỉnh toàn bộ trang */
+body {
+  background-color: #f3f4f6; /* Màu nền nhạt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container chính */
+.container {
+  background-color: #fff; /* Màu nền trắng */
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  text-align: center;
+}
+
+/* Tiêu đề */
+.container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000; /* Màu chữ đen */
+}
+
+/* Đoạn văn bản */
+.container p {
+  font-size: 16px;
+  color: #333; /* Màu chữ xám đậm */
+  margin-bottom: 20px;
+}
+
+/* Input box */
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Viền nhạt */
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-box input:focus {
+  border-color: #007bff; /* Màu viền khi focus */
+  outline: none;
+}
+
+/* Nút bấm */
+.btn {
+  width: 100%;
+  height: 40px;
+  background-color: #007bff; /* Màu xanh nút */
+  color: #fff; /* Màu chữ trắng */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Màu xanh đậm khi hover */
+}
+
+/* Liên kết */
+.link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #007bff; /* Màu xanh liên kết */
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
